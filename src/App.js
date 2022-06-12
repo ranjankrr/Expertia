@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import First from './Components/First';
+import Second from './Components/Second';
+import Third from './Components/Third';
+import Footer from './Components/Footer';
+import SingnUp from './Components/SingnUp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const App = ()=>{
+  return(
+    <>
+    <div className='bg'> 
+   
+      <Navbar/>
+      <Switch>
+             <Route exact path='/' component={First}/>
+             <Route exact path='/contact/' component={Third}/>
+             <div className='singnUp-center'>
+                 <Route exact path='/signup/' component={SingnUp}/>
+             </div>
+       </Switch>
+      <First/>
+     </div>
+     <Second/>
+     <div className='bg'>
+         <Third/>
+         <hr/> 
+         <Footer/>   
+     </div>
+    
+
+    </>
+  )
 }
-
 export default App;
