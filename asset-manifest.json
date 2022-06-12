@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Expertia/static/css/main.3412ac3e.css",
+    "main.js": "/Expertia/static/js/main.38da1bc6.js",
+    "index.html": "/Expertia/index.html",
+    "main.3412ac3e.css.map": "/Expertia/static/css/main.3412ac3e.css.map",
+    "main.38da1bc6.js.map": "/Expertia/static/js/main.38da1bc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3412ac3e.css",
+    "static/js/main.38da1bc6.js"
+  ]
+}
